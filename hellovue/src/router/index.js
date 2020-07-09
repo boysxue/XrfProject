@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/login',
     name: 'Login',
@@ -23,6 +23,16 @@ Vue.use(VueRouter)
     path:'/userCenter',
     name:'userCenter',
     component: () => import('@/views/userCenter.vue')
+  },
+  {
+    path:'/map',
+    name:'map',
+    component: () => import('@/views/map.vue')
+  },
+  {
+    path:'/waterfallFlow',
+    name:'waterfallFlow',
+    component: () => import('@/views/waterfallFlow.vue')
   }
 ]
 
